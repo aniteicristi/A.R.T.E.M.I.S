@@ -13,6 +13,7 @@ makes the assistant say something
 makes the assistant open a file, program or webpage
 
 ``` -w x; ```
+
 makes the assistant wait for x (integer) miliseconds.
 
 
