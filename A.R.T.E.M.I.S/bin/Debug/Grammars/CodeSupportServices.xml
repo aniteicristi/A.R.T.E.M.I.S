@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<grammar version="1.0" xml:lang="en-US" mode="voice" tag-format="semantics-ms/1.0"
+root="rootRule" xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="rootRule">
+    <one-of>
+      <item>
+        <one-of>
+          <item>load <ruleref uri="#presets"/> </item>
+          <item>copy <ruleref uri="#presets"/> </item>
+        </one-of>
+        <tag>$="0500001";</tag>
+      </item>
+
+      <item>
+        <one-of>
+          <item>read my clipboard out lout</item>
+          <item>read my clipboard</item>
+          <item>what's in my clipboard</item>
+          <item>read clipboard</item>
+        </one-of>
+        <tag>$="0500002";</tag>
+      </item>
+    
+      <item>
+        <one-of>
+          <item>save my clipboard</item>
+          <item>save clipboard</item>
+        </one-of>
+        <tag>$="0500003";</tag>
+      </item>
+    
+      <item>
+        <one-of>
+          <item>wipe my clipboard</item>
+          <item>wipe clipboard</item>
+        </one-of>
+        <tag>$="0500004";</tag>
+      </item>
+    
+      <item>
+        <one-of>
+          <item>search my clipboard</item>
+          <item>search clipboard</item>
+          <item>google clipboard</item>
+        </one-of>
+        <tag>$="0500005";</tag>
+      </item>
+
+      <item>
+        <one-of>
+          <item>show me my presets</item>
+          <item>show my presets</item>
+          <item>open presets folder</item>
+          <item>show me presets folder</item>
+          <item>show me the presets folder</item>
+        </one-of>
+        <tag>$="0500006";</tag>
+      </item>
+
+      <item>
+        <one-of>
+          <item>delete <ruleref uri="#presets"/></item>
+          <item>remove <ruleref uri="#presets"/></item>
+        </one-of>
+        <tag>$="0500007";</tag>
+      </item>
+    </one-of>
+  </rule>
+
+  <rule id="presets">  <one-of>    <item>copypasta.txt</item><item>ghost</item>  </one-of>  <item repeat="0-1"> preset</item></rule>
+</grammar>

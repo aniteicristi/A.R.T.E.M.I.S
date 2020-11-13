@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<grammar version="1.0" xml:lang="en-US" mode="voice" tag-format="semantics-ms/1.0"
+root="rootRule" xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="rootRule">
+    <one-of>
+
+      <item>
+        <one-of>
+          <item>open source tree</item>
+          <item>run source tree</item>
+        </one-of>
+        <tag>$="0400001";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>open git panel</item>
+          <item>open git configuration panel</item>
+          <item>show git panel</item>
+          <item>show git configuration panel</item>
+        </one-of>
+        <tag>$="0400002";</tag>
+      </item>
+
+      <item>
+        <one-of>
+          <item>commit to <ruleref uri="#repos"/></item>
+          <item>commit changes to <ruleref uri="#repos"/></item>
+        </one-of>
+        <tag>$="0400003";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>push to <ruleref uri="#repos"/></item>
+          <item>push changes to <ruleref uri="#repos"/></item>
+        </one-of>
+        <tag>$="0400004";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>commit and push to <ruleref uri="#repos"/></item>
+          <item>commit and push changes to <ruleref uri="#repos"/></item>
+        </one-of>
+        <tag>$="0400005";</tag>
+      </item>
+
+      <item>
+        <one-of>
+          <item>fetch from<ruleref uri="#repos"/></item>
+          <item>fetch <ruleref uri="#repos"/></item>
+        </one-of>
+        <tag>$="0400006";</tag>
+      </item>
+
+      <item>
+        <one-of>
+          <item>pull from<ruleref uri="#repos"/></item>
+          <item>pull <ruleref uri="#repos"/></item>
+        </one-of>
+        <tag>$="0400007";</tag>
+      </item>
+      
+    </one-of>
+  </rule>
+
+  <rule id="repos">  <one-of><item>ghost</item>  </one-of>  <item repeat="0-1"> repository</item></rule>
+</grammar>

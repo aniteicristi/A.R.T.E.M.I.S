@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<grammar version="1.0" xml:lang="en-US" mode="voice" tag-format="semantics-ms/1.0"
+root="rootRule" xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="rootRule">
+    <one-of>
+      <item>
+        <item repeat="0-1">please</item>
+        <one-of>
+          <item>what time is it</item>
+          <item>tell me the time</item>
+          <item>do you know what time is it</item>
+          <item>tell me what time it is</item>
+          <item>tell me the current time</item>
+          <item>give me the time</item>
+          <item>what is the time</item>
+          <item>give me the current hour</item>
+        </one-of>
+        <item repeat="0-1">please</item>
+        <tag>$="01001"; </tag>
+      </item>
+
+      <item>
+        <item repeat="0-1">please</item>
+        <one-of>
+          <item>what day is it</item>
+          <item>what date is it</item>
+          <item>tell me what day it is</item>
+          <item>what is today</item>
+          <item>tell me the current date</item>
+          <item>tell me the current day</item>
+        </one-of>
+        <item repeat="0-1">please</item>
+        <tag>$="01002"; </tag>
+      </item>
+
+      <item>
+        <item repeat="0-1">please</item>
+        <one-of>
+          <item>show me my agenda</item>
+          <item>open my calendar</item>
+          <item>open my agenda</item>
+          <item>open calendar</item>
+          <item>show calendar</item>
+          <item>open agenda</item>
+          <item>show agenda</item>
+        </one-of>
+        <item repeat="0-1">please</item>
+        <tag>$="01003"; </tag>
+      </item>
+    </one-of>
+  </rule>
+</grammar>

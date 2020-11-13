@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<grammar version="1.0" xml:lang="en-US" mode="voice" tag-format="semantics-ms/1.0"
+root="rootRule" xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="rootRule">
+    <one-of>
+      <item>
+        <one-of>
+          <item>how are you</item>
+          <item>how do you do</item>
+          <item>what's up</item>
+          <item>how is it going</item>
+        </one-of>
+        <tag>$="0200001";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>open notepad</item>
+          <item>run notepad</item>
+          <item>execute notepad</item>
+        </one-of>
+        <tag>$="0200002";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>open browser</item>
+          <item>run browser</item>
+          <item>open google</item>
+        </one-of>
+        <tag>$="0200003";</tag>
+      </item>
+    
+      <item>
+        <one-of>
+          <item>open visual studio</item>
+          <item>run visual studio</item>
+        </one-of>
+        <tag>$="0200005";</tag>
+      </item>
+    
+      <item>
+        <one-of>
+          <item>open photoshop</item>
+          <item>run photoshop</item>
+        </one-of>
+        <tag>$="0200006";</tag>
+      </item>
+    
+      <item>
+        <one-of>
+          <item>open calculator</item>
+          <item>run calculator</item>
+        </one-of>
+        <tag>$="0200007";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>open explorer</item>
+          <item>run explorer</item>
+          <item>open file explorer</item>
+          <item>run file explorer</item>
+        </one-of>
+        <tag>$="0200008";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>open unity</item>
+          <item>run unity</item>
+        </one-of>
+        <tag>$="0200009";</tag>
+      </item>
+    
+      <item>
+        <one-of>
+          <item>open paint</item>
+          <item>run paint</item>
+        </one-of>
+        <tag>$="0200010";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>nevermind</item>
+          <item>nothing</item>
+        </one-of>
+        <tag>$="0200011";</tag>
+      </item>
+    
+      <item>
+        <one-of>
+          <item>flip a coin</item>
+          <item>flip me a coin</item>
+        </one-of>
+        <tag>$="0200012";</tag>
+      </item>
+    
+      <item>
+        <one-of>
+          <item>open gmail</item>
+          <item>open email</item>
+        </one-of>
+        <tag>$="0200013";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>let's play rock paper scissors</item>
+          <item>play rock paper scissors</item>
+          <item>play with me rock paper scissors</item>
+        </one-of>
+        <tag>$="0200014";</tag>
+      </item>
+
+      <item>
+        <one-of>
+          <item>open custom command panel</item>
+          <item>open command panel</item>
+          <item>show command panel</item>
+          <item>show custom command panel</item>
+          <item>display command panel</item>
+          <item>display custom command panel</item>
+        </one-of>
+        <tag>$="0200015";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>restart system</item>
+          <item>perform a system restart</item>
+          <item>restart your system</item>
+        </one-of>
+        <tag>$="0200016";</tag>
+      </item>
+
+      <item>
+        <one-of>
+          <item>roll two dice</item>
+        </one-of>
+        <tag>$="0200017";</tag>
+      </item>
+
+      <item>
+        <one-of>
+          <item>who are you</item>
+          <item>what are you</item>
+        </one-of>
+        <tag>$="0200018";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>what version are you</item>
+          <item>what is your version</item>
+        </one-of>
+        <tag>$="0200019";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>who is your owner</item>
+          <item>who is your master</item>
+          <item>what master do you serve</item>
+          <item>who do you serve</item>
+        </one-of>
+        <tag>$="0200020";</tag>
+      </item>
+      
+      <item>
+        <one-of>
+          <item>mute</item>
+          <item>mute yourself</item>
+          <item>microphone off</item>
+          <item>recognition off</item>
+        </one-of>
+        <tag>$="0200021";</tag>
+      </item>
+    
+      <item>
+        <one-of>
+          <item>close yourself</item>
+          <item>stop yourself</item>
+          <item>quit application</item>
+          <item>close system</item>
+        </one-of>
+        <tag>$="0200022";</tag>
+      </item>
+    </one-of>
+  </rule>
+</grammar>

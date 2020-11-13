@@ -1,0 +1,5 @@
+0300002
+open twitter
+opens a webpage on twitter
+-s opening twitter;
+-o https://twitter.com/;
